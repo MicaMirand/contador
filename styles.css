@@ -1,0 +1,104 @@
+/* styles.css */
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(45deg, #00c6ff, #0072ff);
+  }
+  
+  .container {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 2s ease-out;
+    max-width: 90%;
+  }
+  
+  h1 {
+    color: #333;
+    margin-bottom: 30px;
+    font-size: 2rem;
+  }
+  
+  .countdown-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .countdown-item {
+    text-align: center;
+  }
+  
+  .countdown-number {
+    font-size: 3.5rem;
+    color: #0072ff;
+    font-weight: 700;
+    text-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .countdown-label {
+    font-size: 1.2rem;
+    color: #555;
+    margin-top: 10px;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Diseño responsive */
+  @media (max-width: 768px) {
+    h1 {
+      font-size: 1.75rem;
+    }
+  
+    .countdown-number {
+      font-size: 2.5rem;
+    }
+  
+    .countdown-label {
+      font-size: 1rem;
+    }
+  
+    .countdown-container {
+      gap: 15px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    h1 {
+      font-size: 1.5rem;
+    }
+  
+    .countdown-number {
+      font-size: 2rem;
+    }
+  
+    .countdown-label {
+      font-size: 0.9rem;
+    }
+  
+    .countdown-container {
+      gap: 10px;
+    }
+  
+    .container {
+      padding: 20px;
+      max-width: 100%;
+    }
+  }
+  
